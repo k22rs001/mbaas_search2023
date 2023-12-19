@@ -67,6 +67,15 @@
                 })
         }
 
+        function searchAttackGT() {
+            let attack = parseInt($("#attack").val());
+            let TestDataClass = ncmb.DataStore(db);
+            TestDataClass.greaterThan("attack", attack).fetchAll()
+                .then(function(results) {
+                    showResults(results);
+                })
+        }
+
 
 
 
