@@ -60,6 +60,7 @@
         }
 
 
+
         function showResults(results) {
             // テーブルのヘッダを生成
             let msg = "<table><tr><th>name</th><th>Lvl</th><th>attack</th><th>defence</th></tr>";
@@ -95,13 +96,11 @@
         <button class="btn" onclick="searchLevelLT()">Level &lt;</button>
         <button class="btn" onclick="searchLevel()">Level</button>
         <button class="btn" onclick="searchLevelGT()">Level &gt;</button>
+        <button class="btn" onclick="searchattackLT()">Attack &lt;</button>
+        <button class="btn" onclick="searchattackGT()">Attack &gt;</button>
+        
     </div>
     <div id="message">message area</div>
-    <h2>mbaas update</h2>
-    <div>
-        <input type="text" id="data" placeholder="スコア">
-        <a onclick="enterData()" class="btn btn-outline-secondary" role="button">Enter</a>
-    </div>
 </body>
 
 </html>
