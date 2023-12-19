@@ -58,8 +58,7 @@
                     showResults(results);
                 })
         }
-
-        function searchttAckLT() {
+        function searchAttackLT() {
             let attack = parseInt($("#attack").val());
             let TestDataClass = ncmb.DataStore(db);
             TestDataClass.lessThan("attack", attack).fetchAll()
@@ -67,6 +66,7 @@
                     showResults(results);
                 })
         }
+
 
 
 
