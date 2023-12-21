@@ -32,6 +32,15 @@
                 })
         }
 
+        function searchregularexpression() {
+            let name = $("#name").val();
+            let TestDataClass = ncmb.DataStore(db);
+            TestDataClass.regularExpressionTo("name", name).fetchAll()
+                .then(function(results) {
+                    showResults(results);
+                })
+        }
+
         function searchLevelLT() {
             let level = parseInt($("#level").val());
             let TestDataClass = ncmb.DataStore(db);
